@@ -49,13 +49,21 @@ function Home() {
     status = 'Match nul !';
     console.log(status)
     return <p className="victory-message">{status}</p>;
-  } else {
+  }
+
+  function scenario() {
+  const notWinner = Victory(squares);
+  let status;
+  if (!notWinner) {
     status = 'Prochain tour : ' + (xIsNext ? 'x' : 'o');
     console.log(status)
+    return <p className="next-player">{status}</p>;
   }
+}
 
   return (
     <>
+      <div className="message">{scenario()}</div>
       <div className="boardRow1">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
         <Square value={squares[1]} onSquareClick={() => handleClick(1)} />

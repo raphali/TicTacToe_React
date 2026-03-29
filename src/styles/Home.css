@@ -15,8 +15,8 @@ body {
 .boardRow1 {
     display: flex;
     justify-content: center;
-    align-items: end;
-    height: 45vh;
+    /* align-items: end; */
+    /* height:15vh; */
     margin-bottom: 2px;
 }
 
@@ -76,4 +76,19 @@ body {
     background: radial-gradient(yellow, white, yellow);
     color: red;
     font-family: GermaniaOne;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    height: 20rem;
+}
+
+.next-player {
+    display: flex;
+    align-self:end;
+    margin-bottom: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    color: rgb(5, 154, 199);
 }
